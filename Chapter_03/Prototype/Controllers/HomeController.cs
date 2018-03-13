@@ -38,7 +38,7 @@ namespace Prototype.Controllers
                 s.Dispose();
                 ms.Dispose();
 
-                UploadedFile primaryObj = new UploadedFile();
+                var primaryObj = new UploadedFile();
                 primaryObj.FileName = fileName;
                 primaryObj.ContentType = file.ContentType;
                 primaryObj.Size = file.Length;
