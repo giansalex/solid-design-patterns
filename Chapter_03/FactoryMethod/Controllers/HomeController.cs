@@ -21,7 +21,7 @@ namespace FactoryMethod.Controllers
 
         public IActionResult GetImageFree()
         {
-            ChartProviderFree cp = new ChartProviderFree();
+            IChartProvider cp = new ChartProviderFree();
             IChart chart = cp.GetChart();
 
             chart.Title = "Hours per day";
@@ -58,7 +58,7 @@ namespace FactoryMethod.Controllers
 
         public IActionResult GetImagePaid()
         {
-            ChartProviderPaid cp = new ChartProviderPaid();
+            IChartProvider cp = new ChartProviderPaid();
             IChart chart = cp.GetChart();
 
             chart.Title = "Hours per day";
